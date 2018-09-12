@@ -6,7 +6,12 @@
 }
 
 .about > p {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
+@media (min-width: 500px) {
+    .about > p {
+        font-size: 1.5em;
+    }
+}

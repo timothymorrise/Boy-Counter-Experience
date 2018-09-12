@@ -7,12 +7,17 @@ iframe {
 }
 
 .four-oh-four {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .four-oh-four > a {
     color: red;
     text-decoration: none;
+}
+
+.video-page {
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .video-page-counter {

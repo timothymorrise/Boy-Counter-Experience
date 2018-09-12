@@ -3,24 +3,25 @@
 
 footer {
     align-items: center;
-    background-color: blueviolet;
-    border-bottom: 9px double black;
-    border-top: 9px double black;
+    background-color: #32283c;
+    border-top: 2px solid blueviolet;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    height: 175px;
+    justify-content: center;
     width: 100%;
 }
 
 .footer-links {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
+    background-color: #32283c;
     margin-top: 9px;
     margin-bottom: 9px;
 }
 
 .footer-links > a {
-    background-color: blueviolet;
+    background-color: 32283c;
     color: white;
     font-size: 2em;
     text-align: center;
@@ -30,7 +31,7 @@ footer {
 }
 
 .footer-links > a:hover {
-    background-color: lightskyblue;
+    color: #C4003F;
 }
 
 

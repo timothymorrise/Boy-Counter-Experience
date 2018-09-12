@@ -19,7 +19,7 @@ export default class About extends Component {
                         {/* insert link to bio later */}
                         
                     </p>
-                    <p> Data from The Youtube API, may she bless always, our lord and master, in the name of the algorithm, the layout and the media experience, Amen.</p>
+                    <p> Data from The Youtube API, may Youtube bless always &mdash; our harbinger in the darkness &mdash; in the name of The Algorithm, amen.</p>
                 </div>
             </main>
         )

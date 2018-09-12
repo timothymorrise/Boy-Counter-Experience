@@ -117,7 +117,7 @@ class VideoPage extends Component {
                 <div>loading</div>
                 :
                 isValidId ?
-                    <main>
+                    <main className="video-page">
                         <iframe
                             width="560"
                             height="315"
@@ -135,7 +135,7 @@ class VideoPage extends Component {
                         {lateralButtons()}
                     </main>
                     :
-                    <main className="four-oh-four"> THE ONLY WAY OUT IS DOWN, DEBRA. 
+                    <main className="four-oh-four"> Invald Video-ID. Click the arrow for a random video. 
                         <a href="http://homestarrunner.com/404error.html">&darr;</a> 
                     </main>
         )
