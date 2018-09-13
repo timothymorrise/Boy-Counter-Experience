@@ -5,7 +5,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-// IMPORT FROM FILES -- CSS
+// IMPORT FROM FILES -- COMPONENTS, CSS
+import List from "./List"
 import "./Home.css"
 
 class Home extends Component {
@@ -29,8 +30,13 @@ class Home extends Component {
                 :
                 <main className="home">
                     <div className="home-intro">
-                        <p>Watch the hit web series video showtube show "Monster Factory!"</p>
-                        <p> Along the way, count how many times one of the McElroy Brothers says "boy." Think of it like a drinking game,
+                        <p>For the uninitiated, the hit web seires "Monster Factory" is
+                             a webshow in which the McElroy brothers play video games 
+                             and try to create the most bizarre character possible with in-game 
+                            customization options. Among the brothers' idiosyncratic sayings is 
+                            the frequent deployment of the word "boy" without concern
+                             for context </p>
+                        <p> This frivilous page lets you count how many times a McElory says "boy" while you watch a video. Think of it like a drinking game,
                             but instead of imbibing legal addictive depressents, you're channeling your
                              existential dread into a monotonous task of measuring the elusive quality of "humor." </p>
                         <p>
@@ -38,6 +44,7 @@ class Home extends Component {
                         </p>
                     </div>
                     <button className="home-random-button" onClick={this.sendToRandomVideo}>CLICK FOR A RANDOM VIDEO</button>
+                    <List />
                 </main>
         )
     }

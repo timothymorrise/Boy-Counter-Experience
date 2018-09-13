@@ -4,7 +4,7 @@
 // IMPORT FROM PACKAGES
 import React, { Component } from 'react'
 import { connect } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import { changeBoyCounter } from "../../redux/video-data";
 
 // IMPORT FROM FILES
@@ -135,8 +135,7 @@ class VideoPage extends Component {
                         {lateralButtons()}
                     </main>
                     :
-                    <main className="four-oh-four"> Invald Video-ID. Click the arrow for a random video. 
-                        <a href="http://homestarrunner.com/404error.html">&darr;</a> 
+                    <main className="four-oh-four"> Invald Video-ID. <Link to="/">Return Home</Link> 
                     </main>
         )
     }

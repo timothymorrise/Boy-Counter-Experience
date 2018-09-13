@@ -3,20 +3,20 @@
 
 // IMPORT FROM PACKAGES
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-// IMPORT FILES
+// IMPORT FILES -- COMPONENTS, CSS
+import ListItem from "./ListItem"
 import "./List.css"
 
 // CONSTRUCTOR
- class List extends Component {
+class List extends Component {
     render() {
         let { loading, data } = this.props
-        if(!loading) console.log(this.props)
-        
+        if (!loading) console.log(this.props)
+
         // MAP LIST IEMS
-        let mapPreviewDivs = () => {
+        let mapListItems = () => {
             return data.map(dataObject => {
                 // DECONSTRUCTIONS
                 let { snippet } = dataObject
@@ -24,27 +24,22 @@ import "./List.css"
                 let { url } = snippet.thumbnails.medium
                 let { videoId } = snippet.resourceId
                 // RETURN
-                return <div key={videoId} className="list-item">
-                    <Link to={`/videos/${videoId}`}>
-                    <div className="list-item-image" style={{ backgroundImage: `url(${url})` }}></div>
-                    <h2>
-                    {title}
-                    </h2>
-                    </Link>
-                </div>
-
+                return <ListItem  key={videoId} 
+                    title={title} 
+                    url={url} 
+                    videoId={videoId} />  
             })
         }
 
         return (
             loading ?
-            <div> ...loading </div>
-            :
-            <main>
-                <div>
-                {mapPreviewDivs()}
+                <div id="list"> ...loading </div>
+                :
+                <div id="list">
+                    <div>
+                        {mapListItems()}
+                    </div>
                 </div>
-            </main>
         )
     }
 }
@@ -53,4 +48,4 @@ const mapStateToProps = (state) => {
     return state.videoData
 }
 
-export default connect(mapStateToProps, {  })(List);
+export default connect(mapStateToProps, {})(List);

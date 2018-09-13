@@ -1,0 +1,64 @@
+ /* LIST -- CSS */
+ /* ============================= */
+
+.list-item {
+    border-top: 2px solid lightgrey;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    height: 101.25px;
+    padding-bottom: 95px;
+    padding-top: 18px;
+    width: 400px;
+}
+
+.list-item > a {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.list-item > a:hover {
+    color: #C4003F;
+}
+
+.list-item-image {
+    background-size: contain;
+    background-repeat: none;
+    min-height: 101.25px; 
+    min-width: 180px;
+ }
+
+.list-item-title {
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+#list {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 570px) {
+
+    .list-item {
+        width: 570px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+        height: 115.31px;
+        padding-bottom: 108px;
+    }
+    
+    .list-item-image {
+        background-size: contain;
+        background-repeat: none;
+        min-height: 115.31px; 
+        min-width: 205px
+     }
+
+     .list-item-title {
+        margin-left: 20px;
+        font-size: 1.4em;
+    }
+}

@@ -21,6 +21,7 @@ main {
 
 .home>button:hover {
     background-color: #e43459;
+    cursor: pointer;
 }
 
 .home-intro {

@@ -30,7 +30,8 @@ iframe {
 }
 
 .video-page-counter > button {
-    background-color: lightskyblue;
+    color: white;
+    background-color: #C4003F;
     font-size: 1.3em;
     height: 35px;
     width: 35px
@@ -48,13 +49,15 @@ iframe {
 }
 
 .video-page-sliders > button {
-    background-color: skyblue;
+    color: white;
+    background-color: #C4003F;
     font-size: 1.5em;
     width: 100px;
 }
 
 .video-page-sliders > button:hover{
-    color: white;
+    background-color: #e43459;
+    cursor: pointer;
 }
 
 @media (min-width: 700px) {

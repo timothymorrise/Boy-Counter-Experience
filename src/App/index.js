@@ -11,7 +11,6 @@ import { connect } from "react-redux";
 import Header from "../shared/Header";
 import Footer from "../shared/Footer";
 import Home from "./Home";
-import List from "./List";
 import About from "./About";
 import VideoPage from "./VideoPage";
 import "./App.css"
@@ -29,7 +28,6 @@ class App extends Component {
                     <Header />
                     <Switch>
                         <Route exact path="/" component={Home} />
-                        <Route exact path="/videos" component={List} />
                         <Route path="/about" component={About} />
                         <Route path="/videos/:id" component={VideoPage} />
                     </Switch>
