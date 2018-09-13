@@ -30,6 +30,7 @@ class App extends Component {
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/videos/:id" component={VideoPage} />
+                        <Route path="*" component={Home} />
                     </Switch>
                     <Footer />
                 </div>
