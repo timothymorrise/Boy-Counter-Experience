@@ -3,7 +3,15 @@
 
 // IMPORTS
 const axios = require("axios");
-let mfURL = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLaDrN74SfdT6duuVl_8qxJ5eaaPHRX_ij&key=AIzaSyDH4tQqeR1lvtY1z4ymh0wlFz3Ljpeo7xQ&maxResults=50"
+const baseURL = "https://www.googleapis.com/youtube/v3"
+const methodURL = "/playlistItems"
+
+const keys = ["part=","snippet&", // formatted in array so its easier to edit
+    "playlistId=", "PLaDrN74SfdT6duuVl_8qxJ5eaaPHRX_ij&",
+    "key=", "AIzaSyDuElzfRNhtqV5iOKLehHDMveYLOwgP3dA&",
+    "maxResults=", "50"
+]
+let mfURL = baseURL + methodURL + "?" + keys.join('')
 
 
 // ACTION CREATORS
